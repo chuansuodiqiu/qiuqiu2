@@ -75,7 +75,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           shopt -s nullglob
-          files=( ./*.json )
+          files=( ./*.txt )
           # 排除 account 文件，只提交扫描结果
           filtered=()
           for f in "${files[@]}"; do
