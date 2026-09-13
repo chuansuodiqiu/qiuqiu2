@@ -41,7 +41,7 @@ jobs:
         run: |
           shopt -s nullglob
           for i in $(seq 1 10); do
-            files=( ./*.json )
+            files=( ./*.txt )
             # 排除 account 文件本身
             filtered=()
             for f in "${files[@]}"; do
